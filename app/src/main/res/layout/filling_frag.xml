@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TabHost
+        android:id="@+id/tabHost2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:id="@+id/vehicle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <GridView
+                        android:id="@+id/vehicle_gv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/range"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <GridView
+                        android:id="@+id/range_gv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/stores"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+
+                    <GridView
+                        android:id="@+id/stores_gv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/result"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.35"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <Button
+                            android:id="@+id/result_bt"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="50"
+                            android:text="@string/send_bt"
+                            android:textSize="50dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/cancel_bt"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="50"
+                            android:text="@string/cancel_bt"
+                            android:textSize="50dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.65"
+                        android:orientation="vertical">
+
+                        <GridView
+                            android:id="@+id/result_gv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

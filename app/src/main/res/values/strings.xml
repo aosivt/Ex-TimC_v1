@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Экскаваторщик(Тимлюй)</string>
+    <string name="app_text">Я вне фрагмента</string>
+    <string name="fr_text">Это область фрагмента</string>
+    <string name="send_bt">Подтвердить</string>
+    <string name="cancel_bt">Отменить</string>
+    <string name="insert_bt">Добавить</string>
+
+</resources>
